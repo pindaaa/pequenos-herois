@@ -254,7 +254,7 @@ section[id]{scroll-margin-top:70px}
     <h1>Pequenos <span>Heróis</span></h1>
     <p class="lead">Na hora da picada, a criança coloca o óculos e vira herói de uma aventura.</p>
     <div class="cta">
-      <a class="btn primary" href="#sala">Visitar a sala</a>
+      <a class="btn primary" href="#ideia">Conheça a ideia</a>
       <button type="button" class="btn ghost" id="abrir-filme"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Ver o filme</button>
     </div>
   </div></div>
@@ -451,6 +451,14 @@ section[id]{scroll-margin-top:70px}
   </div>
 </section>
 
+<div class="modal" id="modal-filme" role="dialog" aria-modal="true" aria-label="Filme Pequenos Heróis" hidden>
+  <div class="box">
+    <button type="button" class="close" aria-label="Fechar">✕</button>
+    <video controls playsinline poster="img/poster.jpg"></video>
+    <div class="wait" hidden>Carregando o filme...</div>
+  </div>
+</div>
+
 <script>
 /* O servidor não responde a pedidos de trecho (Range), e o Safari/iOS precisa disso.
    Baixa o vídeo inteiro e toca de um blob, que funciona em qualquer navegador. */
@@ -491,13 +499,7 @@ section[id]{scroll-margin-top:70px}
 })();
 </script>
 
-<div class="modal" id="modal-filme" role="dialog" aria-modal="true" aria-label="Filme Pequenos Heróis" hidden>
-  <div class="box">
-    <button type="button" class="close" aria-label="Fechar">✕</button>
-    <video controls playsinline poster="img/poster.jpg"></video>
-    <div class="wait" hidden>Carregando o filme...</div>
-  </div>
-</div>
+
 
 <footer>
   <div class="wrap">
